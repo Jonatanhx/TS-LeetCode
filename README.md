@@ -1,6 +1,6 @@
 ## About
 
-Me solving leetcode problems
+My solutions to leetcode problems
 
 ## How to
 
