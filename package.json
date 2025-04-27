@@ -5,6 +5,6 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "compile": "npx tsx ./Easy/RemoveDuplicatesFromSortedArray.ts"
+    "compile": "npx tsx ./Easy/ts/RemoveDuplicatesFromSortedArray.ts"
   }
 }
