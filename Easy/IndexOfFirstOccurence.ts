@@ -12,6 +12,3 @@ const input1 = "sadbutsad";
 const input2 = "sad";
 
 strStr(input1, input2);
-
-// If haystack contains needle
-//
