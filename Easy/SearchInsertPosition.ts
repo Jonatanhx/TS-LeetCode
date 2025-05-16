@@ -3,31 +3,23 @@
 
 // You must write an algorithm with O(log n) runtime complexity.
 
-const nums = [1, 3, 5, 6];
-const target = 2;
-
 function searchInsert(nums: number[], target: number): number {
-  const middle = Math.floor(nums.length / 2);
-  //check middle value
-  if (nums[middle] == target) {
-    return middle;
-  }
-
-  const left = nums.slice(0, nums.length / 2);
-  const right = nums.slice(nums.length / 2);
-  //Check left array
-  for (let i = 0; i < left.length; i++) {
-    if (nums[i] == target) {
-      return i;
+  if (nums.includes(target)) {
+    console.log("nums contains target", nums.indexOf(target));
+    return nums.indexOf(target);
+  } else {
+    for (let i = 0; i < nums.length; i++) {
+      if (target < nums[i]) {
+        return i;
+      }
     }
-  }
-  //Check right array
-  for (let i = 0; i < right.length; i++) {
-    return i;
-  }
 
-  return -1;
+    return nums.length;
+  }
 }
 
-const result = searchInsert(nums, target);
-console.log(result);
+// const nums = [1001];
+const nums = [1, 3, 5, 6];
+const target = 7;
+
+searchInsert(nums, target);
